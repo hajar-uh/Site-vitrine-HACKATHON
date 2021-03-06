@@ -1,0 +1,271 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+     
+}
+@font-face {
+    font-family: "Staatliches";
+    src: url("../font/Staatliches-Regular.ttf") format("ttf"),
+   }
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/*DEBUT NAV RESPONSIVE*/
+/*DEBUT NAV RESPONSIVE*/
+/* Add a black background color to the top navigation */
+nav{
+    display: block;
+    width: 100vw;
+    height: 92px;
+    background-image: url(../img/prism2.png);
+    overflow-y: hidden; 
+}
+.droite{
+    color:black;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+/*FIN NAV BAR RESPONSIVE */
+/*FIN NAV BAR RESPONSIVE */
+
+.page1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/prism.png);
+}
+.imgparis{
+    position: relative;
+    left: 200px;
+    top: 60px;
+}
+
+.text{
+    width: 850px;
+    position: relative;
+    left: 850px;
+    top: -600px;
+    color: seashell;
+    overflow-y: hidden; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+.h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+.h2{
+    position: relative;
+    top: -540px;
+    font-family: 'Staatliches', cursive;
+    color: seashell;
+    font-size: 15px;
+    text-align: center;
+    overflow-y: hidden; 
+}
+.fleche{
+    position: relative;
+    top: -580px;
+    left: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page2{
+    width: 100vw;
+    height:900px;
+    background-image: url(../img/prism2.png);
+}
+.imgpage2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 280px;
+}
+.page3{
+    width: 100vw;
+    height:1000px;
+    background-image: url(../img/prism.png);
+}
+/*ICON RESEAUX SOCIAUX*/
+/*ICON RESEAUX SOCIAUX*/
+
+/*FIN ICON RESEAUX SOCIAUX*/
+/*FIN ICON RESEAUX SOCIAUX*/
+
+/*  ATTENTION!! TOUT CE QUI SUIT EST EN LIEN AVEC LA FRISE */
+/*  
+.barre{
+    position: relative;
+    z-index: 10;
+    top: 60px;
+    left: 965px;
+}
+h3{
+    font-family: 'Staatliches', cursive;
+    color: seashell;
+    font-size: 15px;
+    text-align: center;
+    overflow-y: hidden; 
+    position: relative;
+    top: 20px;
+}
+.centrer{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border-style: inset;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    color: seashell;
+    text-align: justify;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30px;
+}
+.rond{
+    position: relative;
+    left: 986px;
+    top: 10px;
+    z-index: 100;
+}ATTENTION!! FRISE */
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-image: url(../img/prism.png);
+}
+.timeline {
+  height: auto;
+  width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding-left: 50x;
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  overflow-y: hidden; 
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: justify;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+    padding-left: 40px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+    padding-right: 40px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+footer{
+    width: 100vw;
+    height: 550px;
+    background-image: url(../img/prism2.png);
+}
+footer h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.ligne{
+    margin-left: auto;
+    margin-right: auto;
+}
+footer h5{
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    color: black;
+    position: relative;
+    top:150px;
+    left: 25px;
+    overflow-y: hidden; 
+}
+footer h4{
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    color:black
+}
+footer ul{
+    position: relative;
+    left: 1000px;
+}
+
